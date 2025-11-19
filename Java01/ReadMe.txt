@@ -1,1 +1,1 @@
-Primeiros exercícios que nós fizemos em JAVA
+Todos exercicios que fizemos no ano devem ficar aqui

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class gastomedio {
+	public static void main (String [] args) {
+		
+		Scanner ler = new Scanner (System.in);
+		double distanciaPercorrida, capacidadeCombustivel, gastoMedio;
+		
+		System.out.println ("Insira a distancia percorrida em quilometros: ");
+		distanciaPercorrida = ler.nextDouble();
+		
+		System.out.println ("Insira a capacidade do tanque de combustivel em litros: ");
+		capacidadeCombustivel = ler.nextDouble();
+		
+		gastoMedio = distanciaPercorrida / capacidadeCombustivel;
+		
+		if ( gastoMedio >= 10 ) {
+			System.out.println ("O veiculo é economico.");
+			
+		} else if ( gastoMedio < 10 ) {
+			System.out.println ("O veiculo não é economico.");
+		}
+		ler.close();
+		
+		System.out.println("O gasto médio é igual a "+ gastoMedio );
+	}
+	
+}

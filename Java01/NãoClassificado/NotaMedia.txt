@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class notaMedia {
+	public static void main (String [] args) {
+		
+		Scanner ler = new Scanner (System.in);
+		double n1, n2, n3, n4, mi, nm, ex;
+		
+		System.out.println ("Insira a nota 1: ");
+		n1 = ler.nextDouble();
+		
+		System.out.println ("Insira a nota 2: ");
+		n2 = ler.nextDouble();
+		
+		System.out.println ("Insira a nota 3: ");
+		n3 = ler.nextDouble();
+		
+		System.out.println ("Insira a nota 4: ");
+		n4 = ler.nextDouble();
+		
+		mi = (n1 + n2 + n3 + n4)/ 4;
+		
+		System.out.println ("A média inicial do aluno é: " + mi);
+		
+		if (mi >= 7) {
+			System.out.println ("Aprovado.");
+			
+		} else if (mi < 5) {
+			System.out.println ("Reprovado.");
+			
+			} else {
+				System.out.println ("O aluno está em exame.");
+				
+				System.out.println ("Insira a nota do exame: ");
+				ex = ler.nextDouble();
+				
+				nm = (ex + mi)/ 2;
+				
+				System.out.println ("A nova média do exame é: " + nm);
+				
+				if (nm >=7) {
+					System.out.println ("Aprovado no exame.");
+					
+				} else {
+					System.out.println ("Reprovado no exame.");
+					
+				}
+					
+		} 
+		ler.close();
+		
+	}
+
+}
